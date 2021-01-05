@@ -2,18 +2,34 @@
 <html lang = "ru">
 <head>
     <meta charset = "UTF-8">
-    <title>Товар #3</title>
+    <title>Color Shop</title>
     <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 </head>
 <body>
+    <div id = "main_container"></div>
     <script type = "text/babel">
         ReactDOM.render(
             <div>
-                <h2>Кофе #3</h2>
+                <h2>Дымчатая Роза</h2>
+                <h3>Описание товара</h3>
+                <img src = "imgs/misty_rose.png"/>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam placeat, earum neque molestiae similique aliquid culpa maxime in ex voluptatem cumque, corrupti autem dolores, error a aspernatur explicabo sequi!</p>
+                <h3>Характеристики товара</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/>
+                    Quia aliquam placeat, earum neque molestiae similique aliquid culpa maxime in ex voluptatem cumque.<br/>
+                    Corrupti autem dolores, error a aspernatur explicabo sequi!
+                </p>
+                <h3>Подробное описание товара</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, impedit nam. Sequi laborum aliquam dolorem perferendis nesciunt, magni consectetur dicta doloremque magnam eius, deserunt libero, et voluptates quam numquam quod.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod illum reiciendis vitae dolores perferendis vel delectus fuga, debitis laudantium. Eos consequatur ipsa adipisci voluptas neque accusamus nemo soluta facilis dicta?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, earum quis distinctio quo iusto, asperiores magni facere exercitationem mollitia obcaecati animi cumque delectus similique debitis voluptates, veniam sequi odio nemo!</p>
+                <hr/>
+                <p>Все права защищены.</p>             
             </div>
-            ,document.body
+            ,document.querySelector("#main_container")
         );
     </script>
 </body>
