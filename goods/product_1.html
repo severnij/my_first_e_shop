@@ -10,24 +10,57 @@
 <body>
     <div id = "main_container"></div>
     <script type = "text/babel">
+        class ProductDescription extends React.Component {
+            /* Поместить "название продукта" и изображение в свойства компонента и передавать через вызов. */
+            render() {
+                return <div id = "product_description">
+                    <h2>Лесной Зелёный</h2>
+                    <h3>Описание товара</h3>
+                    <img src = "imgs/forest_green.png"/>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/>
+                        Quia aliquam placeat, earum neque molestiae similique aliquid culpa maxime in ex voluptatem cumque.<br/>
+                        Corrupti autem dolores, error a aspernatur explicabo sequi!
+                    </p>
+                </div>
+            }
+        }
+
+        class ProductSpecifications extends React.Component {
+            render() {
+                return <div id = "product_specifications">
+                    <h3>Характеристики товара</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, assumenda nam quidem aspernatur in corrupti minus eum beatae fuga aperiam repellat amet animi dolorem modi voluptas! Neque ratione cupiditate sapiente.</p>
+                </div>
+            }
+        }
+
+        class ProductDetails extends React.Component {
+            render() {
+                return <div id = "product_details">
+                    <h3>Подробное описание товара</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, impedit nam. Sequi laborum aliquam dolorem perferendis nesciunt, magni consectetur dicta doloremque magnam eius, deserunt libero, et voluptates quam numquam quod.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod illum reiciendis vitae dolores perferendis vel delectus fuga, debitis laudantium. Eos consequatur ipsa adipisci voluptas neque accusamus nemo soluta facilis dicta?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, earum quis distinctio quo iusto, asperiores magni facere exercitationem mollitia obcaecati animi cumque delectus similique debitis voluptates, veniam sequi odio nemo!</p>
+                </div>
+            }
+        }
+
+        class PageFooter extends React.Component {
+            render() {
+                return <div id = "page_footer">
+                    <hr/>
+                    <p>Все права защищены.</p>
+                </div>
+            }
+        }
+
         ReactDOM.render(
             <div>
-                <h2>Лесной Зелёный</h2>
-                <h3>Описание товара</h3>
-                <img src = "imgs/forest_green.png"/>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/>
-                    Quia aliquam placeat, earum neque molestiae similique aliquid culpa maxime in ex voluptatem cumque.<br/>
-                    Corrupti autem dolores, error a aspernatur explicabo sequi!
-                </p>
-                <h3>Характеристики товара</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, assumenda nam quidem aspernatur in corrupti minus eum beatae fuga aperiam repellat amet animi dolorem modi voluptas! Neque ratione cupiditate sapiente.</p>
-                <h3>Подробное описание товара</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, impedit nam. Sequi laborum aliquam dolorem perferendis nesciunt, magni consectetur dicta doloremque magnam eius, deserunt libero, et voluptates quam numquam quod.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod illum reiciendis vitae dolores perferendis vel delectus fuga, debitis laudantium. Eos consequatur ipsa adipisci voluptas neque accusamus nemo soluta facilis dicta?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, earum quis distinctio quo iusto, asperiores magni facere exercitationem mollitia obcaecati animi cumque delectus similique debitis voluptates, veniam sequi odio nemo!</p>
-                <hr/>
-                <p>Все права защищены.</p>
+                <ProductDescription/>
+                <ProductSpecifications/>
+                <ProductDetails/>
+                <PageFooter/>
             </div>
             ,document.querySelector("#main_container")
         );
