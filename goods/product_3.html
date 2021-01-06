@@ -15,7 +15,7 @@
                 return <div id = "product_description">
                     <h2>{this.props.productName}</h2>
                     <h3>Описание товара</h3>
-                    <img src = "imgs/misty_rose.png"/>
+                    <img src = {this.props.productImage}/>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam placeat, earum neque molestiae similique aliquid culpa maxime in ex voluptatem cumque, corrupti autem dolores, error a aspernatur explicabo sequi!</p>
                 </div>
             }
@@ -56,7 +56,7 @@
 
         ReactDOM.render(
             <div>
-                <ProductDescription productName = "Дымчатая Роза"/>
+                <ProductDescription productName = "Дымчатая Роза" productImage = "imgs/misty_rose.png"/>
                 <ProductSpecifications/>
                 <ProductDetails/>
                 <PageFooter/>
