@@ -13,7 +13,7 @@
         class ProductDescription extends React.Component {
             render() {
                 return <div id = "product_description">
-                    <h2>Дымчатая Роза</h2>
+                    <h2>{this.props.productName}</h2>
                     <h3>Описание товара</h3>
                     <img src = "imgs/misty_rose.png"/>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam placeat, earum neque molestiae similique aliquid culpa maxime in ex voluptatem cumque, corrupti autem dolores, error a aspernatur explicabo sequi!</p>
@@ -56,7 +56,7 @@
 
         ReactDOM.render(
             <div>
-                <ProductDescription/>
+                <ProductDescription productName = "Дымчатая Роза"/>
                 <ProductSpecifications/>
                 <ProductDetails/>
                 <PageFooter/>
