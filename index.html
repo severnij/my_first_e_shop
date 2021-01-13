@@ -10,9 +10,23 @@
 <body>
     <div id = "main_container"></div>
     <script type = "text/babel">
+        class Navigation extends React.Component {
+            render() {
+                return <div>
+                    <ul>
+                        <li>Главная</li>
+                        <li>Каталог</li>
+                        <li>Контакты</li>
+                    </ul>
+                </div>
+            }
+        }
+
         ReactDOM.render(
             <div>
                 <h2>Color Shop</h2>
+                <Navigation/>
+                <hr/>
                 <p>Пока закрыто.</p>
             </div>
             ,document.querySelector("#main_container")

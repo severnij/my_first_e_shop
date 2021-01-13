@@ -10,11 +10,22 @@
 <body>
     <div id = "main_container"></div>
     <script type = "text/babel">
+        class Navigation extends React.Component {
+            render() {
+                return <div>
+                    <ul>
+                        <li>Главная</li>
+                        <li>Каталог</li>
+                        <li>Контакты</li>
+                    </ul>
+                </div>
+            }
+        }
+
         class ProductDescription extends React.Component {
             /* Поместить "название продукта" и изображение в свойства компонента и передавать через вызов. */
             render() {
-                return <div id = "product_description">
-                    <h2>{this.props.productName}</h2>
+                return <div id = "product_description">                    
                     <h3>Описание товара</h3>
                     <img src = {this.props.productImage}/>
                     <p>
@@ -57,7 +68,10 @@
 
         ReactDOM.render(
             <div>
-                <ProductDescription productName = "Лесной Зелёный" productImage = "imgs/forest_green.png"/>
+                <h2>Лесной Зелёный</h2>
+                <Navigation/>
+                <hr/>
+                <ProductDescription productImage = "imgs/forest_green.png"/>
                 <ProductSpecifications/>
                 <ProductDetails/>
                 <PageFooter/>
