@@ -23,6 +23,34 @@
             }
         }
 
+        class GoodsList extends React.Component {
+            render() {
+                return <div>
+                    <a href = "goods/product_1.html">
+                        <img src = "goods/imgs/forest_green.png" width = "100px"/>
+                        <br/>
+                        Лесной Зелёный
+                    </a>
+                    <br/>
+                    <br/>
+                    <a href = "goods/product_2.html">
+                        <img src = "goods/imgs/dark_orange.png" width = "100px"/>
+                        <br/>
+                        Тёмный Апельсин
+                    </a>
+                    <br/>
+                    <br/>
+                    <a href = "goods/product_3.html">
+                        <img src = "goods/imgs/misty_rose.png" width = "100px"/>
+                        <br/>
+                        Дымчатая Роза
+                    </a>
+                    <br/>
+                    <br/>
+                </div>
+            }
+        }
+
         class PageFooter extends React.Component {
             render() {
                 return <div id = "page_footer">
@@ -36,6 +64,7 @@
             <div>
                 <Navigation/>
                 <h2>Каталог</h2>
+                <GoodsList/>
                 <PageFooter/>
             </div>
             ,document.querySelector("#main_container")
