@@ -22,12 +22,22 @@
             }
         }
 
+        class PageFooter extends React.Component {
+            render() {
+                return <div id = "page_footer">
+                    <hr/>
+                    <p>&copy; Все права защищены.</p>             
+                </div>
+            }
+        }
+
         ReactDOM.render(
             <div>
                 <h2>Color Shop</h2>
                 <Navigation/>
                 <hr/>
                 <p>Пока закрыто.</p>
+                <PageFooter/>
             </div>
             ,document.querySelector("#main_container")
         );
