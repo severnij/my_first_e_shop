@@ -27,7 +27,9 @@
             render() {
                 return <div id = "product_description">
                     <h3>Описание товара</h3>
-                    <img src = {this.props.productImage}/>
+                    <a href = {this.props.productImage} target = "_blank">
+                        <img src = {this.props.productImage}/>
+                    </a>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam placeat, earum neque molestiae similique aliquid culpa maxime in ex voluptatem cumque, corrupti autem dolores, error a aspernatur explicabo sequi!</p>
                 </div>
             }
@@ -37,11 +39,11 @@
             render() {
                 return <div id = "product_specifications">
                     <h3>Характеристики товара</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/>
-                        Quia aliquam placeat, earum neque molestiae similique aliquid culpa maxime in ex voluptatem cumque.<br/>
-                        Corrupti autem dolores, error a aspernatur explicabo sequi!
-                    </p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Quia aliquam placeat, earum neque molestiae similique aliquid culpa maxime in ex voluptatem cumque.</li>
+                        <li>Corrupti autem dolores, error a aspernatur explicabo sequi!</li>
+                    </ul>
                 </div>
             }
         }
