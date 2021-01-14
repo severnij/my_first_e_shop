@@ -23,6 +23,16 @@
             }
         }
 
+        class AddressForm extends React.Component {
+            render() {
+                return <div>
+                    <h3>Наши координаты</h3>
+                    <p>Наш телефон: +7 (111) 222-33-44</p>
+                    <p>Наш E-mail: email@eshop.com или напишите нам через форму ниже.</p>
+                </div>
+            }
+        }
+
         class ContactForm extends React.Component {
             render() {
                 return <div>
@@ -31,9 +41,9 @@
                         <p>
                             Ваше имя: <input type = "text"/>
                         </p>
-                        <p>
+                        <label>
                             Ваш E-mail: <input type = "text"/>
-                        </p>
+                        </label>
                         <p>
                             Тема вопроса: <input type = "text"/>
                         </p>
@@ -60,6 +70,7 @@
             <div>
                 <Navigation/>
                 <h2>Контакты</h2>
+                <AddressForm/>
                 <ContactForm/>
                 <PageFooter/>
             </div>
