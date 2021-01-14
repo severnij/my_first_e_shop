@@ -14,11 +14,35 @@
             render() {
                 return <div>
                     <ul>
-                        <li>Главная</li>
+                        <li><a href = "index.html">Главная</a></li>
                         <li><a href = "catalog.html">Каталог</a></li>
-                        <li><a href = "contacts.html">Контакты</a></li>
+                        <li>Контакты</li>
                     </ul>
                     <hr/>
+                </div>
+            }
+        }
+
+        class ContactForm extends React.Component {
+            render() {
+                return <div>
+                    <form>
+                        <h3>Напишите нам</h3>
+                        <p>
+                            Ваше имя: <input type = "text"/>
+                        </p>
+                        <p>
+                            Ваш E-mail: <input type = "text"/>
+                        </p>
+                        <p>
+                            Тема вопроса: <input type = "text"/>
+                        </p>
+                        <p>
+                            Ваш вопрос: <textarea></textarea>
+                        </p>
+                        <button type = "submit">Отправить ваш вопрос нам</button>
+                        <button type = "reset">Очистить введённое</button>
+                    </form>
                 </div>
             }
         }
@@ -31,12 +55,12 @@
                 </div>
             }
         }
-
+        
         ReactDOM.render(
-            <div>                
+            <div>
                 <Navigation/>
-                <h2>Color Shop</h2>
-                <p>Пока закрыто.</p>
+                <h2>Контакты</h2>
+                <ContactForm/>
                 <PageFooter/>
             </div>
             ,document.querySelector("#main_container")
