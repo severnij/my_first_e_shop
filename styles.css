@@ -1,3 +1,7 @@
 body {
     background-color: #f8f8f8;
 }
+
+.navigation a {
+    color: blue;
+}
