@@ -44,3 +44,13 @@ body {
     font-size: 14px;
     list-style-image: url(goods/imgs/smile.jpg);
 }
+
+#contact_form input[type = "text"], #contact_form textarea {
+    width: 250px;
+    font-size: 14px;
+    color: #484343;
+}
+
+#contact_form textarea {
+    height: 150px;
+}
