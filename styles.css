@@ -21,3 +21,10 @@ body {
     font-weight: 400;
     background-color: #eaeaea;
 }
+
+#product_description p {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
