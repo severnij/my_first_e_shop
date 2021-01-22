@@ -36,3 +36,11 @@ body {
     line-height: 24px;
     text-align: left;
 }
+
+#product_specifications ul {
+    font-family: sans-serif;
+    color:darkslategray;
+    line-height: 20px;
+    font-size: 14px;
+    list-style-image: url(goods/imgs/smile.jpg);
+}
