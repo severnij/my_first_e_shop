@@ -14,3 +14,10 @@ body {
 .navigation ul {
     list-style-type: none;
 }
+
+#product_description h3, #product_specifications h3, #product_details h3 {
+    color:black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
