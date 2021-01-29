@@ -2,6 +2,11 @@ body {
     background-color: #f8f8f8;
 }
 
+h2 {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+
 .navigation {
     border-top: 0px;
     border-left: 0px;
